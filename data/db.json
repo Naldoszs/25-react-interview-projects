@@ -1,0 +1,9 @@
+{
+  "students": {
+    "name": "Phillips Mary",
+    "location": {
+      "latitude": "20344",
+      "street": "Johnson Awe Street"
+    }
+  }
+}
