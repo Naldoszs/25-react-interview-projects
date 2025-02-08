@@ -3,6 +3,8 @@ import HomePage from "./sections/HomePage";
 import Accordion from "./sections/Accordion";
 import HexColor from "./sections/HexColor";
 import StarRating from "./sections/StarRating";
+import ImageSlider from "./sections/ImageSlider";
+import LoadMoreButton from "./sections/LoadMoreButton";
 
 const App = () => {
   return (
@@ -15,6 +17,20 @@ const App = () => {
           <Route
             path="/components/star-rating"
             element={<StarRating />}
+          ></Route>
+          <Route
+            path="/components/image-slider"
+            element={
+              <ImageSlider
+                url="https://picsum.photos/v2/list"
+                page={"1"}
+                limit={"20"}
+              />
+            }
+          ></Route>
+          <Route
+            path="/components/load-more-button"
+            element={<LoadMoreButton />}
           ></Route>
         </Routes>
       </BrowserRouter>

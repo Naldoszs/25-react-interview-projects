@@ -75,4 +75,25 @@
   .center-item {
     @apply flex justify-center items-center text-center w-full h-auto;
   }
+  /* class to add for the star rating */
+  .active {
+    @apply text-[#fff700];
+  }
+  .inactive {
+    @apply text-[#000000];
+  }
+
+  .currentImage {
+    @apply w-full h-full rounded-md shadow-md;
+  }
+  .currentImage-hide {
+    display: none;
+  }
+
+  /* .currentIndicator {
+    color: blue;
+  }
+  .currentIndicator-remove {
+    color: white;
+  } */
 }
