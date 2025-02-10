@@ -5,8 +5,11 @@ import HexColor from "./sections/HexColor";
 import StarRating from "./sections/StarRating";
 import ImageSlider from "./sections/ImageSlider";
 import LoadMoreButton from "./sections/LoadMoreButton";
+import { useState } from "react";
+import TreeView from "./sections/treeview-section/TreeView";
 
 const App = () => {
+  const [count, setCount] = useState(1);
   return (
     <main className="flex flex-col w-full min-h-screen justify-start">
       <BrowserRouter>
@@ -30,7 +33,20 @@ const App = () => {
           ></Route>
           <Route
             path="/components/load-more-button"
-            element={<LoadMoreButton />}
+            element={
+              <LoadMoreButton
+                // skip={count === 0 ? 0 : count * 20}
+                skip={(count - 1) * 20} // Ensures first load starts at 0
+                count={count}
+                setCount={setCount}
+                limit={"20"}
+                url="https://dummyjson.com/products"
+              />
+            }
+          ></Route>
+          <Route
+            path="/components/tree-view-menu"
+            element={<TreeView />}
           ></Route>
         </Routes>
       </BrowserRouter>

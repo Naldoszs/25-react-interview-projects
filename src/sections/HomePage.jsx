@@ -4,6 +4,7 @@ import LinkButton2 from "../components/LinkButton2";
 import LinkButton3 from "../components/LinkButton3";
 import LinkButton4 from "../components/LinkButton4";
 import LinkButton5 from "../components/LinkButton5";
+import LinkButton6 from "../components/LinkButton6";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,8 @@ const HomePage = () => {
       {/* hex color */}
       <LinkButton3 /> {/* star rating */}
       <LinkButton4 /> {/* image slider */}
-      <LinkButton5 /> {/* infinit scroll/load more btn */}
+      <LinkButton5 /> {/* infinite scroll/load more btn */}
+      <LinkButton6 /> {/* tree view component/ menu UI component / recursive neviagtion menu */}
     </section>
   );
 };
