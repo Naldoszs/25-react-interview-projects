@@ -8,7 +8,7 @@ import LinkButton6 from "../components/LinkButton6";
 
 const HomePage = () => {
   return (
-    <section className="flex w-full min-h-screen justify-center items-center flex-col space-y-3 border-2 border-red-500 padding-desktop max-lg:padding-tablet max-sm:padding-mobile text-main-black">
+    <section className="flex w-full min-h-screen justify-center items-center flex-col space-y-3  padding-desktop max-lg:padding-tablet max-sm:padding-mobile text-main-black">
       <LinkButton1 />
       {/* accordion */}
       <LinkButton2 />
@@ -16,7 +16,8 @@ const HomePage = () => {
       <LinkButton3 /> {/* star rating */}
       <LinkButton4 /> {/* image slider */}
       <LinkButton5 /> {/* infinite scroll/load more btn */}
-      <LinkButton6 /> {/* tree view component/ menu UI component / recursive neviagtion menu */}
+      <LinkButton6 />{" "}
+      {/* tree view component/ menu UI component / recursive neviagtion menu */}
     </section>
   );
 };

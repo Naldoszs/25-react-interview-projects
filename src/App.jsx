@@ -7,6 +7,7 @@ import ImageSlider from "./sections/ImageSlider";
 import LoadMoreButton from "./sections/LoadMoreButton";
 import { useState } from "react";
 import TreeView from "./sections/treeview-section/TreeView";
+import menuData from "./constants/menuData";
 
 const App = () => {
   const [count, setCount] = useState(1);
@@ -46,7 +47,7 @@ const App = () => {
           ></Route>
           <Route
             path="/components/tree-view-menu"
-            element={<TreeView />}
+            element={<TreeView menuData={menuData} />}
           ></Route>
         </Routes>
       </BrowserRouter>
