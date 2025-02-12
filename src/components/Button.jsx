@@ -14,11 +14,13 @@ const Button = ({
   color = "text-white",
   disabled,
   disabledBgColor = null,
+  width = "w-full",
+  cursorType = "cursor-pointer",
 }) => {
   return (
     <button
       to={path}
-      className={`flex w-full h-auto justify-center items-center p-5 text-xl  font-workSans font-semibold rounded-md ${hoverColor} ${backgroundColor} ${color} ${maxWidth} ${minWidth} transition-all duration-500 ease-in-out ${marginBottom} ${borderColor} ${borderWeight} shadow-3xl ${hoverTextColor} ${hoverBorderColor} ${disabledBgColor}`}
+      className={`flex ${width} h-auto justify-center items-center p-5 text-xl  font-workSans font-semibold rounded-md ${hoverColor} ${backgroundColor} ${color} ${maxWidth} ${minWidth} transition-all duration-500 ease-in-out ${marginBottom} ${borderColor} ${borderWeight} shadow-3xl ${hoverTextColor} ${hoverBorderColor} ${disabledBgColor} ${cursorType}`}
       onClick={onClick}
       disabled={disabled}
     >

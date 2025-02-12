@@ -45,7 +45,7 @@ const StarRating = ({ noOfStars = 10 }) => {
           })}
         </div>
       </div>
-      <LinkButton text="Back to Home" path="/" marginTop="mt-14" />{" "}
+      <LinkButton text="Back to Home" path="/" marginTop="mt-14" />
       {/* takes ,e back to home*/}
     </section>
   );

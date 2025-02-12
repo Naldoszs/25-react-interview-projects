@@ -8,6 +8,8 @@ import LoadMoreButton from "./sections/LoadMoreButton";
 import { useState } from "react";
 import TreeView from "./sections/treeview-section/TreeView";
 import menuData from "./constants/menuData";
+import QRCodeGenerator from "./sections/QRCodeGenerator";
+import ThemeChange from "./sections/ThemeChange";
 
 const App = () => {
   const [count, setCount] = useState(1);
@@ -48,6 +50,14 @@ const App = () => {
           <Route
             path="/components/tree-view-menu"
             element={<TreeView menuData={menuData} />}
+          ></Route>
+          <Route
+            path="/components/qr-code-generator"
+            element={<QRCodeGenerator />}
+          ></Route>
+          <Route
+            path="/components/change-theme"
+            element={<ThemeChange />}
           ></Route>
         </Routes>
       </BrowserRouter>

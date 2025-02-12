@@ -1,3 +1,4 @@
+import LinkButton from "../../components/LinkButton";
 import MenuList from "./MenuList";
 const TreeView = ({ menuData = [] }) => {
   return (
@@ -5,6 +6,7 @@ const TreeView = ({ menuData = [] }) => {
       <main>
         <MenuList list={menuData} />
       </main>
+      <LinkButton text="Back to Home" path="/" marginTop="mt-14" />
     </section>
   );
 };
