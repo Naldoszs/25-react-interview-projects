@@ -8,7 +8,7 @@ const CustomScrollIndicator = () => {
   return (
     <section className="flex flex-col w-full min-h-[100vh] padding-desktop max-lg:padding-tablet max-sm:padding-mobile items-center overflow-x-auto justify-start">
       <Header />
-      <ProductContextProvider url={"https://dummyjson.com/products?limit=100"}>
+      <ProductContextProvider url={"https://dummyjson.com/products?limit=120"}>
         <Main />
         <Footer />
       </ProductContextProvider>

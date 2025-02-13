@@ -5,8 +5,21 @@ const Main = () => {
   const { isLoading, errMsg, data, scrollPercentage } =
     useContext(ProductContext);
   return (
-    <main className="w-full h-auto flex flex-col max-sm:pt-[52px] pt-[10px] max-lg:pt-[38px] items-center space-y-5 text-base font-normal font-workSans text-slate-700">
-      <p className="flex w-full h-auto fixed top-[60px]">{scrollPercentage}</p>
+    <main className="w-full h-auto flex flex-col max-sm:pt-[52px] pt-[10px] max-lg:pt-[38px] items-center space-y-5 text-base font-normal font-workSans text-slate-700 ">
+      {/* Scroll progress indicator */}
+      <div
+        aria-label="scroll progress indicator container"
+        className=" fixed top-[60px] w-full bg-gray-200 h-3 transition-all duration-300 ease-linear"
+      >
+        <div
+          className="bg-green-600 h-full"
+          aria-label="scroll indicator"
+          style={{
+            width: `${scrollPercentage}%`,
+          }}
+        ></div>
+      </div>
+
       {isLoading ? (
         <h3 className="font-dmSans text-3xl font-semibold">
           Products loading...

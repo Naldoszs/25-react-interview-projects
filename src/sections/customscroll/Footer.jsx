@@ -16,7 +16,7 @@ const Footer = () => {
         {scrollPercentage ? (
           <p className="text-base mt-2">{`You have scrolled ${scrollPercentage}% of the page`}</p>
         ) : (
-          <p>nothing to display</p>
+          <p>0%</p>
         )}
       </div>
     </footer>

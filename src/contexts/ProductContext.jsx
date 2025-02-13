@@ -34,14 +34,15 @@ export const ProductContextProvider = ({ children, url }) => {
 
   // Memoized function to calculate scroll percentage
   const handleScrollPercentage = useCallback(() => {
-    const scrollTop = window.scrollY; // gives how far u scrolled from top to curnt position in px
-    const viewPortHeight = window.innerHeight; //gives height of current viewport
-    const totalDocHeight = document.documentElement.scrollHeight; // gives total page height[ wid the one to scroll inclusive]
-    const docHeight = totalDocHeight - viewPortHeight; //gives total scrollable area
-
-    if (docHeight > 0) {
-      const scrolled = (scrollTop / docHeight) * 100; // gives scroll ratio in percentage
-      setScrollPercentage(scrolled);
+    //get how far we scrolled
+    const scrollOffsetY = window.scrollY; //get ur scroll position
+    const viewPortHeight = window.innerHeight; //get viewport height
+    const totalScrollHeight = document.documentElement.scrollHeight; //gets the page height
+    const scrollableAreaHeight = totalScrollHeight - viewPortHeight;
+    //get the scroll ratio in percentage
+    if (scrollableAreaHeight > 0) {
+      const scrolledPercentage = (scrollOffsetY / scrollableAreaHeight) * 100;
+      setScrollPercentage(scrolledPercentage);
     }
   }, []);
 
