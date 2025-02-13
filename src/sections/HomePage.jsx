@@ -7,6 +7,7 @@ import LinkButton5 from "../components/LinkButton5";
 import LinkButton6 from "../components/LinkButton6";
 import LinkButton7 from "../components/LinkButton7";
 import LinkButton8 from "../components/LinkButton8";
+import LinkButton9 from "../components/LinkButton9";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,8 @@ const HomePage = () => {
       {/* qr code generator */}
       <LinkButton8 />
       {/* theme changer */}
+      <LinkButton9 />
+      {/* custom scroll indicator */}
     </section>
   );
 };

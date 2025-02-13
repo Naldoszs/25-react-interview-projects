@@ -10,6 +10,7 @@ import TreeView from "./sections/treeview-section/TreeView";
 import menuData from "./constants/menuData";
 import QRCodeGenerator from "./sections/QRCodeGenerator";
 import ThemeChange from "./sections/ThemeChange";
+import CustomScrollIndicator from "./sections/customscroll/CustomScrollIndicator";
 
 const App = () => {
   const [count, setCount] = useState(1);
@@ -58,6 +59,14 @@ const App = () => {
           <Route
             path="/components/change-theme"
             element={<ThemeChange />}
+          ></Route>
+          <Route
+            path="/components/custom-scroll-indicator"
+            element={
+              <CustomScrollIndicator
+                url={"https://dummyjson.com/products?limit=100"}
+              />
+            }
           ></Route>
         </Routes>
       </BrowserRouter>

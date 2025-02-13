@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import LinkButton from "../components/LinkButton";
 import useLocalStorage from "./custom-hooks/useLocalStorage";
 
 const ThemeChange = () => {
@@ -41,6 +42,12 @@ const ThemeChange = () => {
           onClick={() => handleThemeToggle()}
         />
       </div>
+      <LinkButton
+        text="Back to Home"
+        path="/"
+        marginTop="mt-14"
+        textColor={theme === "light" ? "text-main-black-100" : "text-white"}
+      />
     </section>
   );
 };
