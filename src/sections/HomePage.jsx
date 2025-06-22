@@ -1,5 +1,6 @@
 import Button from "../components/Button";
 import LinkButton1 from "../components/LinkButton1";
+import LinkButton10 from "../components/LinkButton10";
 import LinkButton2 from "../components/LinkButton2";
 import LinkButton3 from "../components/LinkButton3";
 import LinkButton4 from "../components/LinkButton4";
@@ -8,6 +9,8 @@ import LinkButton6 from "../components/LinkButton6";
 import LinkButton7 from "../components/LinkButton7";
 import LinkButton8 from "../components/LinkButton8";
 import LinkButton9 from "../components/LinkButton9";
+import LinkButton11 from "../components/LinkButton11";
+import LinkButton12 from "../components/LinkButton12";
 
 const HomePage = () => {
   return (
@@ -27,6 +30,13 @@ const HomePage = () => {
       {/* theme changer */}
       <LinkButton9 />
       {/* custom scroll indicator */}
+      <LinkButton10 />
+      {/* custom tabs */}
+      <LinkButton11 />
+      {/* custom modal */}
+      {/* the project component */}
+      <LinkButton12 />
+      {/* github profile generator*/}
     </section>
   );
 };

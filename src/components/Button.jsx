@@ -6,7 +6,7 @@ const Button = ({
   hoverBorderColor = null,
   maxWidth = "max-w-[50%]",
   minWidth = "min-w-[65%]",
-  onClick,
+  onClick /*  */,
   marginBottom = "mb-0",
   backgroundColor = "bg-black",
   borderColor = "border-none",

@@ -11,6 +11,9 @@ import menuData from "./constants/menuData";
 import QRCodeGenerator from "./sections/QRCodeGenerator";
 import ThemeChange from "./sections/ThemeChange";
 import CustomScrollIndicator from "./sections/customscroll/CustomScrollIndicator";
+import CustomTabs from "./sections/custom-tabs/CustomTabs";
+import CustomModal from "./sections/modal-pop-up/CustomModal";
+import GithubProfileGenerator from "./sections/GithubProfileGenerator";
 
 const App = () => {
   const [count, setCount] = useState(1);
@@ -67,6 +70,20 @@ const App = () => {
                 url={"https://dummyjson.com/products?limit=100"}
               />
             }
+          ></Route>
+          <Route
+            path="/components/custom-tabs"
+            element={<CustomTabs />}
+          ></Route>
+
+          <Route
+            path="/components/custom-modal"
+            element={<CustomModal />}
+          ></Route>
+
+          <Route
+            path="/components/github-profile-generator"
+            element={<GithubProfileGenerator />}
           ></Route>
         </Routes>
       </BrowserRouter>
